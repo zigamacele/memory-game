@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+#root {
+  overflow: hidden;
+}
+/********************************************** HEADER  **********************************************/
+
+.header {
+  font-size: 28em;
+  font-weight: 800;
+  height: 2em;
+  background-color: rgb(31, 50, 50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: white;
+}
+
+.title-poke {
+  color: rgb(194, 54, 54);
+  font-size: 1em;
+}
+
+/********************************************** SCOREBOARD  **********************************************/
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10em;
+  gap: 5em;
+  padding: 1em 1em 1.5em 1em;
+}
+
+.scoreboard-current,
+.scoreboard-high {
+  color: white;
+  padding: 1em;
+  border-radius: 100px;
+}
+
+.scoreboard-current {
+  color: rgb(31, 50, 50);
+  border: 0.5mm solid rgb(31, 50, 50);
+  padding: 0.8em;
+}
+.scoreboard-high {
+  background-color: rgb(194, 54, 54);
+}
+
+/********************************************** POKEMONSQUARE  **********************************************/
+.pokemon-component--box {
+  display: grid;
+  grid-template-columns: repeat(3, 80em);
+  grid-template-rows: repeat(3, 100em);
+  justify-content: center;
+  align-items: center;
+  gap: 8em;
+}
+/********************************************** POKEMON  **********************************************/
+
+.pokemon--box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10em;
+  background-color: white;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 0.2rem rgb(31, 50, 50));
+}
+.pokemon-name {
+  font-size: 15em;
+  font-weight: 600;
+}
+.pokemon-image {
+  height: 200em;
+  width: 200em;
+}
+
+/********************************************** FOOTER  **********************************************/
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2em;
+  background: rgb(31, 50, 50);
+  font-size: 10em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  color: white;
+}
+
+.footer-logo {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+a {
+  display: block;
+  font-size: 1em;
+  text-decoration: none;
+  background-size: 10em;
+}
+
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/********************************************** ANIMATIONS  **********************************************/
+
+.tracking-in-expand {
+  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.text-shadow-drop-center {
+  -webkit-animation: text-shadow-drop-center 0.6s both;
+  animation: text-shadow-drop-center 0.6s both;
+}
+
+@-webkit-keyframes text-shadow-drop-center {
+  0% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    text-shadow: 0 0 18px rgba(0, 0, 0, 0.35);
+  }
+}
+@keyframes text-shadow-drop-center {
+  0% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    text-shadow: 0 0 18px rgba(0, 0, 0, 0.35);
+  }
+}
