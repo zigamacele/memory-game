@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/zigamacele/memory-game/static/css/main.b7097d31.css",
-    "main.js": "/zigamacele/memory-game/static/js/main.661df032.js",
-    "static/media/github-logo.png": "/zigamacele/memory-game/static/media/github-logo.88da611141a27050a0cb.png",
-    "index.html": "/zigamacele/memory-game/index.html",
-    "main.b7097d31.css.map": "/zigamacele/memory-game/static/css/main.b7097d31.css.map",
-    "main.661df032.js.map": "/zigamacele/memory-game/static/js/main.661df032.js.map"
+    "main.css": "/memory-game/static/css/main.b7097d31.css",
+    "main.js": "/memory-game/static/js/main.e5fd54f1.js",
+    "static/media/github-logo.png": "/memory-game/static/media/github-logo.88da611141a27050a0cb.png",
+    "index.html": "/memory-game/index.html",
+    "main.b7097d31.css.map": "/memory-game/static/css/main.b7097d31.css.map",
+    "main.e5fd54f1.js.map": "/memory-game/static/js/main.e5fd54f1.js.map"
   },
   "entrypoints": [
     "static/css/main.b7097d31.css",
-    "static/js/main.661df032.js"
+    "static/js/main.e5fd54f1.js"
   ]
 }
