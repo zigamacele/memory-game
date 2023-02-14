@@ -1,7 +1,8 @@
 # PokéMemory Game
 
 Pokemon themed memory game. \
-Get points by clicking on an image but don't click on any more than once!
+The aim is to click each card only once. The cards are shuffled each round and if you click the same card twice, you lose. \
+If you manage to reach 9 points you will be given a new set of pokemon.
 
 Framework: React \
 API: https://pokeapi.co/ \
